@@ -41,10 +41,6 @@
       }
     ]
   },
-  "extensionPack": [
-    "docsmsft.docs-markdown",
-    "docsmsft.docs-preview"
-  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "webpack --mode production --config webpack.config.ts",
