@@ -117,10 +117,6 @@ export default class ReacTreePanel {
       vscode.Uri.joinPath(this._extensionUri, 'out', 'main.wv.js')
     );
 
-    const styleUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, 'media', 'styles.css')
-    );
-
     // Use a nonce to whitelist which scripts can be run
     const nonce = getNonce();
 
@@ -130,7 +126,6 @@ export default class ReacTreePanel {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>reacttree</title>
-        <link rel="stylesheet" href="${styleUri}">
       </head>
       <body>
         <div id="root"></div>
